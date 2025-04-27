@@ -1,0 +1,13 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+#uni {
+  border: 1px solid grey;
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 10px;
+
+  width: 200px;
+}
