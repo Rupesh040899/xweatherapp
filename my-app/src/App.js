@@ -24,7 +24,7 @@ const SearchBar = ({ onSearch }) => {
 
 const WeatherCard = ({ title, data }) => {
   return (
-    <div id="uni">
+    <div id="uni" className="weather-card">
       <h3>{title}</h3>
       <p>{data}</p>
     </div>
@@ -59,9 +59,9 @@ const WeatherDisplay = ({ city }) => {
 
   return (
     <div>
-      {loading && <p>Loading data..</p>}
+      {loading && <p>Loading data...</p>}
       {!loading && data && (
-        <div>
+        <div className="weather-cards">
           <WeatherCard title="Temprature" data={`${data.current.temp_c}°C`} />
           <WeatherCard title="Humidity" data={`${data.current.humidity}%`} />
           <WeatherCard title="Condition" data={data.current.condition.text} />
